@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 window.onload = function () {
   const now = new Date();
 
@@ -27,3 +28,6 @@ function generateOptions(selectId, start, end, step = 1) {
     select.appendChild(option);
   }
 }
+=======
+// 現在、Service Worker は使用していません。
+// このファイルには今後必要な JavaScript を記述してください。
