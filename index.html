@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>睡眠記録フォーム</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <h1>睡眠記録フォーム</h1>
+
+  <form id="sleep-form">
+    <section>
+      <label for="date">日付：</label>
+      <input type="date" id="date" name="date">
+    </section>
+
+    <section>
+      <label>就寝時刻：</label>
+      <select id="bedHour" name="bedHour"></select> 時
+      <select id="bedMinute" name="bedMinute"></select> 分
+    </section>
+
+    <section>
+      <label for="sleepLatency">入眠までの時間（分）：</label>
+      <select id="sleepLatency" name="sleepLatency"></select>
+    </section>
+
+    <section>
+      <label>起床時刻：</label>
+      <select id="wakeHour" name="wakeHour"></select> 時
+      <select id="wakeMinute" name="wakeMinute"></select> 分
+    </section>
+
+    <section>
+      <label>睡眠の満足度（1〜5）：</label>
+      <div class="radio-group">
+        <label><input type="radio" name="satisfaction" value="1">1</label>
+        <label><input type="radio" name="satisfaction" value="2">2</label>
+        <label><input type="radio" name="satisfaction" value="3">3</label>
+        <label><input type="radio" name="satisfaction" value="4">4</label>
+        <label><input type="radio" name="satisfaction" value="5">5</label>
+      </div>
+    </section>
+
+    <section>
+      <label for="exercise">運動の有無：</label>
+      <select id="exercise" name="exercise">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+      </select>
+    </section>
+
+    <section>
+      <label for="screen">スクリーン使用の有無：</label>
+      <select id="screen" name="screen">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+      </select>
+    </section>
+
+    <section>
+      <label for="awake">途中覚醒の有無：</label>
+      <select id="awake" name="awake">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+      </select>
+    </section>
+
+    <section>
+      <label for="caffeine">カフェイン摂取の有無：</label>
+      <select id="caffeine" name="caffeine">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+      </select>
+    </section>
+
+    <section>
+      <label>就寝前の気分（1〜5）：</label>
+      <div class="radio-group">
+        <label><input type="radio" name="mood" value="1">1</label>
+        <label><input type="radio" name="mood" value="2">2</label>
+        <label><input type="radio" name="mood" value="3">3</label>
+        <label><input type="radio" name="mood" value="4">4</label>
+        <label><input type="radio" name="mood" value="5">5</label>
+      </div>
+    </section>
+
+    <button type="submit">送信</button>
+  </form>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
