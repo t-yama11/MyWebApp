@@ -3,87 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>睡眠記録フォーム</title>
+  <title>ホーム</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <main>
-    <h1>睡眠記録フォーム</h1>
-    <form id="sleepForm" class="form-container">
-
-      <div class="form-group">
-        <label for="date">日付</label>
-        <input type="date" id="date" name="date" />
-      </div>
-
-      <div class="form-group">
-        <label for="bedtimeHour">就寝時間</label>
-        <div class="time-row">
-          <select id="bedtimeHour" name="bedtimeHour"></select>
-          <span class="colon-separator">:</span>
-          <select id="bedtimeMinute" name="bedtimeMinute"></select>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label for="sleepLatency">入眠までの時間（分）</label>
-        <select id="sleepLatency" name="sleepLatency"></select>
-      </div>
-
-      <div class="form-group">
-        <label for="wakeHour">起床時間</label>
-        <div class="time-row">
-          <select id="wakeHour" name="wakeHour"></select>
-          <span class="colon-separator">:</span>
-          <select id="wakeMinute" name="wakeMinute"></select>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label>睡眠の満足度</label>
-        <div class="radio-group" id="satisfaction"></div>
-      </div>
-
-      <div class="form-group">
-        <label>運動の有無</label>
-        <select name="exercise">
-          <option value="0">No</option>
-          <option value="1">Yes</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label>スクリーン使用の有無</label>
-        <select name="screen">
-          <option value="0">No</option>
-          <option value="1">Yes</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label>途中覚醒の有無</label>
-        <select name="awake">
-          <option value="0">No</option>
-          <option value="1">Yes</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label>カフェイン摂取の有無</label>
-        <select name="caffeine">
-          <option value="0">No</option>
-          <option value="1">Yes</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label>就寝前の気分</label>
-        <div class="radio-group" id="mood"></div>
-      </div>
-
-    </form>
+  <main class="home-main">
+    <h1>睡眠記録アプリへようこそ</h1>
+    <div class="button-container">
+      <a href="record.html" class="primary-button">記録入力</a>
+    </div>
   </main>
-
-  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
 </body>
 </html>

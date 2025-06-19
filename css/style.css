@@ -16,6 +16,7 @@ main {
 h1 {
   font-size: 1.5em;
   margin-bottom: 1em;
+  text-align: center;
 }
 
 .form-container {
@@ -62,4 +63,30 @@ input[type="date"] {
   font-weight: bold;
   font-size: 1.1em;
   padding: 0 4px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.primary-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.primary-button:hover {
+  background-color: #0056b3;
+}
+
+.home-main {
+  text-align: center;
 }
