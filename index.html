@@ -18,8 +18,11 @@
 
       <div class="form-group">
         <label for="bedtimeHour">就寝時間</label>
-        <select id="bedtimeHour" name="bedtimeHour"></select>
-        <select id="bedtimeMinute" name="bedtimeMinute"></select>
+        <div class="time-row">
+          <select id="bedtimeHour" name="bedtimeHour"></select>
+          <span class="colon-separator">:</span>
+          <select id="bedtimeMinute" name="bedtimeMinute"></select>
+        </div>
       </div>
 
       <div class="form-group">
@@ -29,8 +32,11 @@
 
       <div class="form-group">
         <label for="wakeHour">起床時間</label>
-        <select id="wakeHour" name="wakeHour"></select>
-        <select id="wakeMinute" name="wakeMinute"></select>
+        <div class="time-row">
+          <select id="wakeHour" name="wakeHour"></select>
+          <span class="colon-separator">:</span>
+          <select id="wakeMinute" name="wakeMinute"></select>
+        </div>
       </div>
 
       <div class="form-group">

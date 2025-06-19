@@ -51,3 +51,15 @@ input[type="date"] {
 .radio-group label {
   font-weight: normal;
 }
+
+.time-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.colon-separator {
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 0 4px;
+}
